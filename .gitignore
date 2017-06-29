@@ -1,0 +1,13 @@
+*.exp
+*.iobj
+*.ipdb
+*.pdb
+*.metagen
+*.VC.opendb
+*.VC.db
+
+.vs/
+build/
+
+Release/
+Debug/
