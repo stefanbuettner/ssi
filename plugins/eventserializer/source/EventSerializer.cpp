@@ -189,11 +189,7 @@ void EventSerializer::process () {
 					}
 
 					if (n != _options.dimension)
-						ssi_wrn("dimension mismatch (received %d, expected %d)", 1, _options.dimension);
-
-					val = 1;
-					//memcpy(out_ptr, &val, sizeof(ssi_real_t)); out_ptr += sizeof(ssi_real_t);
-					//++sample_num;
+						ssi_wrn("dimension mismatch (received %d, expected %d)", n, _options.dimension);
 					}
 
 					break;
