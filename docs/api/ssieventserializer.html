@@ -1,0 +1,410 @@
+<?xml version="1.0" ?>
+<HTML>
+    <HEAD>
+        <TITLE>ssieventserializer.dll  - Social Signal Interpretation (SSI) API [v1.0.0]
+        </TITLE>
+    </HEAD>
+    <BODY>
+        <!---->
+        <!--========== SOURCE ===========-->
+        <!---->
+        <P>
+            <DL>
+                <DT>
+                    <FONT SIZE="+2">
+                        <B>SOURCE</B>
+                    </FONT>
+                </DT>
+                <DD>
+                    <FONT SIZE="+2">
+                        <CODE>
+                            <A NAME="ssieventserializer.dll">ssieventserializer.dll</A>
+                        </CODE>
+                    </FONT>
+                </DD>
+            </DL>
+        </P>
+        <!---->
+        <!--========== SUMMARY ===========-->
+        <!---->
+        <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+            <TR>
+                <TH BGCOLOR="#CCCCFF" ALIGN="left" COLSPAN="2">
+                    <FONT SIZE="+2">
+                        <B>SUMMARY</B>
+                    </FONT>
+                </TH>
+            </TR>
+            <TR>
+                <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+                    <CODE>EventSerializer</CODE>
+                </TD>
+                <TD ALIGN="left" VALIGN="top" WIDTH="100%">
+                    <CODE>
+                        <A HREF="#EventSerializer">EventSerializer</A>
+                    </CODE>
+                </TD>
+            </TR>
+            <TR>
+                <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+                    <CODE>ESListener</CODE>
+                </TD>
+                <TD ALIGN="left" VALIGN="top" WIDTH="100%">
+                    <CODE>
+                        <A HREF="#ESListener">ESListener</A>
+                    </CODE>
+                </TD>
+            </TR>
+            <TR>
+                <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+                    <CODE>DimensionSelector</CODE>
+                </TD>
+                <TD ALIGN="left" VALIGN="top" WIDTH="100%">
+                    <CODE>
+                        <A HREF="#DimensionSelector">DimensionSelector</A>
+                    </CODE>
+                </TD>
+            </TR>
+        </TABLE>
+        <P />
+        <!---->
+        <!--========== DETAILS ===========-->
+        <!---->
+        <TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0">
+            <TR>
+                <TH BGCOLOR="#CCCCFF" ALIGN="left" COLSPAN="2">
+                    <FONT SIZE="+2">
+                        <B>DETAILS</B>
+                    </FONT>
+                </TH>
+            </TR>
+            <TR>
+                <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+                    <CODE SIZE="+2">
+                        <A NAME="EventSerializer">EventSerializer</A>
+                    </CODE>
+                </TD>
+                <TD>
+                    <!---->
+                    <!--========== CLASS ===========-->
+                    <!---->
+                    <TABLE BORDER="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;
+                                <B>EventSerializer</B>&nbsp;
+                                <CODE>SENSOR</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="100%" COLSPAN="7">xx</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;sr&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;DOUBLE&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'120.00000'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;update rate in hz&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;tupleMaxValue&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;BOOL&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'false'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;compute max value from tuple events&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;eventAddr&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;CHAR&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1024&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;''&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;event address to listen&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;dimension&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;UINT&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'0'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;the number of values per event&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="100%" COLSPAN="6">Available channels:</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;event&nbsp;
+                                </CODE>
+                            </TD>
+                            <TD WIDTH="100%" COLSPAN="6">
+                                <CODE>&nbsp;xx&nbsp;
+                                </CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR>
+                <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+                    <CODE SIZE="+2">
+                        <A NAME="ESListener">ESListener</A>
+                    </CODE>
+                </TD>
+                <TD>
+                    <!---->
+                    <!--========== CLASS ===========-->
+                    <!---->
+                    <TABLE BORDER="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;
+                                <B>ESListener</B>&nbsp;
+                                <CODE>OBJECT</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="100%" COLSPAN="7">takes events sent from classification models, mapps confidence values into the vector space and forwards them to the vector fusion.</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;dimension&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;INT&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'0'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;dimension of output-vector&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;nclasses&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;INT&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'0'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;number of classes of mapped classifier&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;sname&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;CHAR&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1024&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'vsender'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;name of sender&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;ename&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;CHAR&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1024&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;'vevent'&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;name of event&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR>
+                <TD ALIGN="right" VALIGN="top" WIDTH="1%">
+                    <CODE SIZE="+2">
+                        <A NAME="DimensionSelector">DimensionSelector</A>
+                    </CODE>
+                </TD>
+                <TD>
+                    <!---->
+                    <!--========== CLASS ===========-->
+                    <!---->
+                    <TABLE BORDER="0" WIDTH="100%" CELLPADDING="0" CELLSPACING="0">
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;
+                                <B>DimensionSelector</B>&nbsp;
+                                <CODE>FILTER</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="100%" COLSPAN="7">selects specific dimensions from a stream</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+                            <TD WIDTH="1%">&nbsp;&nbsp;&#43;</TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;dimensions&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;CHAR&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;1024&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%" style="white-space: nowrap">
+                                <CODE>&nbsp;''&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="1%">
+                                <CODE>&nbsp;LOCK&nbsp;</CODE>
+                            </TD>
+                            <TD WIDTH="100%">
+                                <CODE>&nbsp;indices of selected dimensions&nbsp;</CODE>
+                            </TD>
+                        </TR>
+                        <TR>
+                            <TD WIDTH="100%" COLSPAN="7">&nbsp;</TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+        </TABLE>
+        <HR />
+        <FONT SIZE="-1">
+            <P>Built with Social Signal Interpretation (SSI) [v1.0.0]
+                <BR />(c) University of Augsburg
+                <BR />
+                <A HREF="http://openssi.net" TARGET="new">http://openssi.net</A>
+            </P>
+        </FONT>
+    </BODY>
+</HTML>

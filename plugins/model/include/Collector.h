@@ -31,7 +31,7 @@
 
 #include "base/IConsumer.h"
 #include "signal/SignalCons.h"
-#include "ssiml/include/SampleList.h"
+#include "model/SampleList.h"
 #include "thread/Event.h"
 #include "ioput/option/OptionList.h"
 
