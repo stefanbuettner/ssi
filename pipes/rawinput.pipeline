@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<pipeline>
+
+	<register>
+		<load name="ssirawinput" />	
+		<load name="ssieventserializer" />	
+		<load name="ssiioput" />	
+		
+	</register>	
+
+	<thread create="Rawinput"  activedevices="true,true,true"></thread>
+	
+	<object create="EventMonitor:monitor">
+		<listen address="@" span="10000"/>
+	</object>
+	
+	<!-- Socket sender -->
+	<!--
+	<consumer create="SocketWriter" host="" port="50110" type="0" id="gsr" osc="true">
+		<input pin="gsr" frame="0.1s" />
+	</consumer>
+	<consumer create="SocketWriter" host="" port="50111" type="0" id="gsr-pre">
+		<input pin="gsr_low" frame="3.0s" />
+	</consumer>
+	<consumer create="SocketWriter" host="" port="50112" type="0" id="gsr-arousal">
+		<input pin="gsr_arousal" frame="3.0s" />
+	</consumer>
+	<object create="SocketEventWriter" host="" port="50113" type="0">
+		<listen address="gsr-af@gsr" />
+	</object>
+	<object create="SocketEventWriter" host="" port="50114" type="0">
+		<listen address="gsr-peak,gsr-slope,gsr-drop@gsr" />
+	</object>
+	-->
+
+		
+	<!-- decoration -->
+	<object create="Decorator" icon="true" title="Pipeline">
+		<area pos="0,0,400,600">console</area>
+		<area pos="400,0,400,600">plot*</area>
+		<area pos="800,0,400,600">monitor*</area>
+	</object>
+	
+
+
+<sensor create="EventSerializer" sr="50" dimension="7" eventAddr="raw_mouse@rawinput">
+
+<output channel="event" pin="raw" />
+
+</sensor>
+
+<consumer create="FileWriter" path="raw" type="1">
+		<input pin="raw" frame="0.2s" />
+	</consumer>
+
+
+
+</pipeline>
